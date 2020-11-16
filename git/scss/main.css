@@ -1,0 +1,112 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #000; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+div {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+h2, h3, h4, h5, h6 {
+  font-size: 26px;
+  font-weight: 700; }
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+header {
+  background: #000;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  header ul, header li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px; }
+  header li {
+    margin-left: 20px; }
+  header i {
+    color: #fff; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+section {
+  padding-top: 60px;
+  padding-bottom: 111px; }
+
+.title {
+  text-align: center;
+  margin-bottom: 50px; }
+  .title p {
+    margin-top: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    font-weight: 500; }
+
+.portfolio {
+  display: flex;
+  justify-content: space-between; }
+  .portfolio__item {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #000;
+    border: 5px solid #000;
+    width: 530px;
+    text-align: center;
+    align-items: center; }
+    .portfolio__item:hover {
+      color: #fff;
+      background: #ffaf00;
+      transition: .3s ease; }
+    .portfolio__item a {
+      width: 530px; }
+    .portfolio__item img {
+      display: none; }
+
+.works__item {
+  border: 3px solid #000;
+  width: 530px;
+  margin-bottom: 20px; }
+  .works__item:hover {
+    color: #fff;
+    background: #ffaf00;
+    transition: .3s ease; }
+  .works__item h3 {
+    text-align: center; }
+.works .none {
+  display: none; }
+
+footer {
+  background: #414141;
+  padding-top: 45px;
+  padding-bottom: 55px; }
+  footer .footer {
+    display: flex;
+    justify-content: space-between; }
+  footer p {
+    color: #fff;
+    font-size: 18px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; }
+
+/*# sourceMappingURL=main.css.map */
