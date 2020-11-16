@@ -1,0 +1,167 @@
+$blk: #000;
+$col2: 10px;
+$content-width__100: 1140px;
+$content-width__50: $content-width__100 / 2 - ( $col2 * 4 );
+$content-width__33: $content-width__100 / 3 - ( $col2 * 6 );
+$content-width__25: $content-width__100 / 4 - ( $col2 * 8 );
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $blk;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: $blk;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  ul, li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  i {
+    color: #fff;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 111px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  p {
+    margin-top: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.portfolio {
+  $wht: #fff;
+  $ylw: #ffaf00;
+  $color__hov: $wht;
+  $bgr__hov: $ylw;
+
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: $blk;
+    border: 5px solid $blk;
+    width: $content-width__50;
+    text-align: center;
+    align-items: center;
+    &:hover {
+      color: $color__hov;
+      background: $bgr__hov;
+      transition: .3s ease;
+    }
+    a {
+      width: $content-width__50;
+    }
+    img {
+      display: none;
+    }
+  }
+}
+
+.works {
+  $wht: #fff;
+  $ylw: #ffaf00;
+  $color__hov: $wht;
+  $bgr__hov: $ylw;
+
+  &__list {
+
+  }
+  &__item {
+    border: 3px solid $blk;
+    width: $content-width__50;
+    margin-bottom: 20px;
+    &:hover {
+      color: $color__hov;
+      background: $bgr__hov;
+      transition: .3s ease;
+    }
+    h3 {
+      text-align: center;
+    }
+  }
+  & .none {
+    display: none;
+  }
+}
+
+footer {
+  $wht: #fff;
+  $gry: #414141;
+
+  background: $gry;
+  padding-top: 45px;
+  padding-bottom: 55px;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    color: $wht;
+    font-size: 18px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
